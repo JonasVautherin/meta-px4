@@ -11,7 +11,7 @@ SRC_URI += "file://mavlink-router.sh"
 S = "${WORKDIR}/git"
 PR = "r0"
 
-inherit autotools update-rc.d
+inherit autotools pkgconfig update-rc.d
 
 INITSCRIPT_NAME = "mavlink-router"
 INITSCRIPT_PARAMS = "defaults"
