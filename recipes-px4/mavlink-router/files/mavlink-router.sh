@@ -28,7 +28,7 @@ delay_stop() {
 case "$1" in
     start)
     echo -n "Starting $DESC: "
-    start-stop-daemon -S -x $DAEMON -- $ARGS
+    start-stop-daemon -S --background -x $DAEMON -- $ARGS
     echo "$NAME."
     ;;
     stop)
